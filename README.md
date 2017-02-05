@@ -1,5 +1,5 @@
-# Google Tag Manager wrapper (WIP)
-Nette framework plugin - GTM with data layer for dynamic remarketing
+# Google Tag Manager (WIP)
+GTM wrapper with data layer for dynamic remarketing @ Nette framework.
 
 Usage
 ------------
@@ -13,7 +13,7 @@ Installation
 The best way to install is using  [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require studioartcz/googledatalayer
+$ composer require studioartcz/gtm
 ```
 
 Configuration
