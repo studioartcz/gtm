@@ -1,5 +1,11 @@
-# GoogleDataLayer
-Nette framework plugin - Google data layer (JS) for dynamic remarketing
+# Google Tag Manager wrapper (WIP)
+Nette framework plugin - GTM with data layer for dynamic remarketing
+
+Usage
+------------
+- Basic websites
+- Ecommerce
+- Catalogue of companies
 
 Installation
 ------------
@@ -21,8 +27,3 @@ extensions:
 googleDataLayer:
 	gtmId: '%gtmId%'
 ```
-
-Usage
------
-
-todo
