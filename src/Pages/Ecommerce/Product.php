@@ -1,8 +1,8 @@
 <?php
 
-namespace StudioArtcz\GoogleDataLayer\Pages\Ecommerce;
+namespace StudioArtcz\GTM\Pages\Ecommerce;
 
-use StudioArtCz\GoogleDataLayer\Pages\BasePage;
+use StudioArtCz\GTM\Pages\BasePage;
 use Nette;
 
 /**

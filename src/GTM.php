@@ -6,6 +6,6 @@ namespace StudioArtCz;
  * Class GoogleDataLayer
  * @package StudioArtCz
  */
-class GoogleDataLayer
+class GTM
 {
 }

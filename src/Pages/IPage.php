@@ -1,6 +1,6 @@
 <?php
 
-namespace StudioArtCz\GoogleDataLayer\Pages;
+namespace StudioArtCz\GTM\Pages;
 
 interface IPage
 {
