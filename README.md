@@ -22,8 +22,8 @@ Configuration
 .neon
 ```yml
 extensions:
-	feed: StudioArtcz\GTM\DI\GTMExtension
+	GTM: StudioArtcz\GTM\DI\GTMExtension
 
-googleDataLayer:
-	gtmId: '%gtmId%'
+GTM:
+	id: '%gtmId%'
 ```
