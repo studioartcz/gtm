@@ -1,8 +1,51 @@
 <script n:syntax="off">
-	var google_tag_params = {
-		'ecomm_prodid':     ['123A', 'H456'],    // Product ID in array
-		'ecomm_pagetype':   'cart',              // Type page
-		'ecomm_totalvalue': '118.99',            // Total value, no currency, two decimal places
-		'ecomm_category':   ['Garden', 'Home']   // Category title (when is no empty)
-	};
+	// See https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-ecommerce#product-data
+	var datalayer = {
+		"event":      "checkout",    // is required
+		'pagetype':   "cart",        // is required
+		"ecommerce":  {
+			"checkout": {
+				"actionField": {
+					"id":          "T1234",     // is required
+					"revenue":     "CZK",       // see http://www.xe.com/iso4217.php
+					"affiliation": "Sexshop",
+					"tax":         "20",
+					"shipping":    "",
+					"coupon":      "EXAMPLE-222",
+					"step":        4,            // Position order step  -is no is required
+
+				},
+				"products":    [
+					{
+						"id":         "b55da",            // is required
+						"name":       "Flexigen T-Shirt", // is required
+						"price":      "16.00",            // is required
+						"brand":      "Flexigen",
+						"category":   "T-Shirts",         // is required
+						"variant":    "red",
+						"dimension1": "M",
+						"position":   0,
+						"quantity":   1,
+						"coupon":     "EXAMPLE-222"
+					},
+
+					{
+						"id":         "b55da",            // is required
+						"name":       "Flexigen T-Shirt", // is required
+						"price":      "16.00",            // is required
+						"brand":      "Flexigen",
+						"category":   "T-Shirts",          // is required
+						"variant":    "blue",
+						"dimension1": "M",
+						"position":   1,
+						"quantity":   3,
+						"coupon":     "EXAMPLE-222"
+					},
+
+
+					// another product ....
+				]
+			}
+		}
+	}
 </script>
