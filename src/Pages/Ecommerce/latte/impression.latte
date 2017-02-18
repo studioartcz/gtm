@@ -1,0 +1,31 @@
+<script n:syntax="off">
+	// Fire in category, search,...
+	// https://developers.google.com/tag-manager/enhanced-ecommerce
+	var datalayer = {
+		"event":      "impressions",    // is required
+		'ecommerce': {
+			'currencyCode': 'EUR',                               // Is optional
+			'impressions':  [
+				{
+					'name':     'Triblend Android T-Shirt',      // is required
+					'id':       '12345',                         // is required
+					'price':    '15.25',                         // is required
+					'brand':    'Google',
+					'category': 'Apparel',
+					'variant':  'Gray',
+					'list':     'Search Results',
+					'position': 1
+				},
+				{
+					'name':     'Donut Friday Scented T-Shirt',
+					'id':       '67890',
+					'price':    '33.75',
+					'brand':    'Google',
+					'category': 'Apparel',
+					'variant':  'Black',
+					'list':     'Search Results',
+					'position': 2
+				}]
+		}
+	}
+</script>

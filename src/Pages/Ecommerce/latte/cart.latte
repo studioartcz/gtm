@@ -1,8 +1,8 @@
 <script n:syntax="off">
-	// See https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-ecommerce#product-data
+    // Fire in cart page (no purchase!)
+	// See https://developers.google.com/tag-manager/enhanced-ecommerce
 	var datalayer = {
 		"event":      "checkout",    // is required
-		'pagetype':   "cart",        // is required
 		"ecommerce":  {
 			"checkout": {
 				"actionField": {
@@ -26,7 +26,6 @@
 						"dimension1": "M",
 						"position":   0,
 						"quantity":   1,
-						"coupon":     "EXAMPLE-222"
 					},
 
 					{
@@ -34,12 +33,11 @@
 						"name":       "Flexigen T-Shirt", // is required
 						"price":      "16.00",            // is required
 						"brand":      "Flexigen",
-						"category":   "T-Shirts",          // is required
+						"category":   "T-Shirts",         // is required
 						"variant":    "blue",
 						"dimension1": "M",
 						"position":   1,
 						"quantity":   3,
-						"coupon":     "EXAMPLE-222"
 					},
 
 

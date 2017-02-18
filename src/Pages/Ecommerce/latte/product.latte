@@ -1,8 +1,21 @@
 <script n:syntax="off">
-	var google_tag_params = {
-		'ecomm_prodid':     'H456',             // Product ID in array
-		'ecomm_pagetype':   'product',          // Type page
-		'ecomm_totalvalue': '118.99',           // Total value, no currency, two decimal places
-		'ecomm_category':   'Garden'            // Category title (when is no empty)
-	};
+	// Fire in product page
+	// See https://developers.google.com/tag-manager/enhanced-ecommerce
+	var datalayer = {
+		"event":     "product",    // is required
+		"ecommerce": {
+			"detail": {
+				"actionField": {"list": "Apparel Gallery"},    // "detail" actions have an optional list property.
+				"products":
+                    [{
+					"name":     "Triblend Android T-Shirt",         // Name or ID is required.
+					"id":       "12345",
+					"price":    "15.25",
+					"brand":    "Google",
+					"category": "Apparel",
+					"variant":  "Gray"
+				}]
+			}
+		}
+	}
 </script>

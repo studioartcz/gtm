@@ -1,22 +1,19 @@
 <script n:syntax="off">
-	// Fire in click product
+	// Fire in button / link remove product from cart
 	// See https://developers.google.com/tag-manager/enhanced-ecommerce
 	var datalayer = {
-		"event":     "addtocart",    // is required
+		"event":     "removefromcart",    // is required
 		"ecommerce": {
-			"currencyCode": "EUR",
-			"click":        {
-				'add': {                                // 'add' actionFieldObject measures.
-					'products': [{                        //  adding a product to a shopping cart.
-						'name':     'Triblend Android T-Shirt',
-						'id':       '12345',
-						'price':    '15.25',
-						'brand':    'Google',
-						'category': 'Apparel',
-						'variant':  'Gray',
-						'quantity': 1
-					}]
-				}
+			'remove': {                               // 'remove' actionFieldObject measures.
+				'products': [{                          //  removing a product to a shopping cart.
+					'name':     'Triblend Android T-Shirt',
+					'id':       '12345',
+					'price':    '15.25',
+					'brand':    'Google',
+					'category': 'Apparel',
+					'variant':  'Gray',
+					'quantity': 1
+				}]
 			}
 		}
 	}
