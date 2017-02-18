@@ -3,7 +3,7 @@ GTM wrapper with data layer for dynamic remarketing @ Nette framework.
 
 Usage
 ------------
-- Basic websites
+- Basic shop
 - Ecommerce
 - Catalogue of companies
 
